@@ -1,0 +1,49 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "browser": true,
+    "es2024": true
+  },
+  "plugins": [
+    "eslint",
+    "oxc",
+    "typescript",
+    "import",
+    "promise",
+    "unicorn",
+    "react",
+    "react-perf",
+    "jsx-a11y",
+    "jsdoc",
+    "vitest"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "error",
+    "pedantic": "error",
+    "style": "off",
+    "restriction": "error",
+    "nursery": "off"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "error",
+
+    "eslint/no-console": "error",
+    "eslint/no-debugger": "error",
+
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "allow": "as-needed",
+        "extensions": ["tsx"]
+      }
+    ],
+
+    "oxc/no-async-await": "off"
+  }
+}
