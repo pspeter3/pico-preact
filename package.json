@@ -13,11 +13,16 @@
   },
   "type": "module",
   "scripts": {
-    "test": "exit 0"
+    "test": "run-p test:*",
+    "test:types": "tsc"
   },
   "dependencies": {
     "@tanstack/preact-query": "^5.93.0",
     "preact": "^10.28.4",
     "preact-iso": "^2.11.1"
+  },
+  "devDependencies": {
+    "npm-run-all2": "^8.0.4",
+    "typescript": "^5.9.3"
   }
 }
