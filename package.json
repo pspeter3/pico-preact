@@ -13,7 +13,12 @@
   },
   "type": "module",
   "scripts": {
+    "fix": "run-s fix:*",
+    "fix:lint": "oxlint --fix",
+    "fix:format": "oxfmt --write",
     "test": "run-p test:*",
+    "test:format": "oxfmt --check",
+    "test:lint": "oxlint",
     "test:types": "tsc"
   },
   "dependencies": {
@@ -23,6 +28,8 @@
   },
   "devDependencies": {
     "npm-run-all2": "^8.0.4",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
     "typescript": "^5.9.3"
   }
 }
