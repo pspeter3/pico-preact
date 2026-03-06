@@ -24,6 +24,7 @@
     "test:types": "tsc"
   },
   "dependencies": {
+    "@picocss/pico": "^2.1.1",
     "@tanstack/preact-query": "^5.93.0",
     "preact": "^10.28.4",
     "preact-iso": "^2.11.1"
@@ -32,6 +33,7 @@
     "npm-run-all2": "^8.0.4",
     "oxfmt": "^0.36.0",
     "oxlint": "^1.51.0",
+    "sass-embedded": "^1.97.3",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
   }
