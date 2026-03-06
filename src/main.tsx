@@ -1,3 +1,5 @@
 import { render } from "preact";
 
-render(<h1>Pico Preact</h1>, document.body);
+import { App } from "./app";
+
+render(<App />, document.body);
